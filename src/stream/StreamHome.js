@@ -1,14 +1,18 @@
 import React from 'react';
 import Center from './Center';
+import Header from '../base/Header';
+import Footer from '../base/Footer';
 import './Stream.css';
+import '../base/Base.css';
 
-class StreamHome extends React.Component {
-    
-    render() {
-        return(
-            <Center />
-        )
-    }
-  }
+function StreamHome() {
+  return ( 
+    <div>
+        <Header />
+        <Center />
+        <Footer />
+    </div>
+  );
+}
 
   export default StreamHome;

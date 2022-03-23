@@ -24,8 +24,10 @@ html, body {
     color: var(--font-color);
 }
 
-.center {
+.centerBase {
     margin-left: 30vw;
+    margin-top: 30px;
+    margin-bottom: 2px;
 }
 
 .footer-menu {
