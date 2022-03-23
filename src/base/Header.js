@@ -1,23 +1,34 @@
 import 'purecss/build/buttons.css';
 import 'purecss/build/pure-min.css';
-import 'purecss/build/grids-responsive-min.css';
 import './Base.css';
 
-const items = ["Stream", "ML", "Trends", "Metrics"];
-const siteName = "Shatrughan Rai"
+const items = ["Home", "Stream", "ML", "Trends", "Metrics"];
+
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+function toggleTheme() {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-light');
+    } else {
+        setTheme('theme-dark');
+    }
+}
+
 
 export default function Header() {
   return (
-        <div class="header">
-            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-                <a class="pure-menu-heading" href="">{siteName}</a>
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-                    {items.map((item) => 
-                        <li class="pure-menu-item"><a href={item} class="pure-menu-link">{item}</a></li>
-                    )}
-                </ul>
+            <div className="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <ul className="pure-menu-list">
+                        {items.map((item) => 
+                            <li className="pure-menu-item" key={item}>
+                            <a href={item} className="pure-menu-link">{item}</a>
+                            </li>
+                        )}
+                    <li className="pure-menu-item switchTheme"><a href="#" onClick={toggleTheme} className="pure-menu-link">switchTheme</a></li>
+                </ul>                
             </div>
-        </div>
   );
 }

@@ -1,21 +1,12 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Center from './Center';
+import './Stream.css';
 
 class StreamHome extends React.Component {
-
-    // constructor(props){
-    //     super(props);        
-    // }
     
     render() {
         return(
-            <div className="flex-container fullPage">
-                <Header></Header>
-                <Center></Center>
-                <Footer></Footer>
-            </div>
+            <Center />
         )
     }
   }

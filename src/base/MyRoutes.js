@@ -13,8 +13,6 @@ export default class MyRoutes extends Component {
         return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
                     <Route path="stream" element={<StreamHome />} />
                 </Routes>
             </BrowserRouter>

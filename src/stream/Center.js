@@ -32,12 +32,18 @@ export default class Center extends React.Component {
     render() {
         return(
             <div>
-            <div className="flex-container center">                
-            <input className="searchVideo" placeholder="search videos" onChange={evt => this.filterVideo(evt)}/>
+            <form class="pure-form searchVideoForm">
+                <input type="text" className="pure-input-1 searchVideoTextBox" placeholder="search video" onChange={evt => this.filterVideo(evt)}/>
+                <br />
+            </form>
+
+            <div class="pure-g">
             {this.state.items.map((item) =>
-                <video className="videoItem" width="320" height="240" controls key={item}>
-                    <source src={this.videoPath(item)} type="video/mp4"/>
-                </video>
+                <div class="pure-u-1 pure-u-md-1-1 videoGrid"> 
+                    <video className="videoItem" controls key={item}>
+                        <source src={this.videoPath(item)} type="video/mp4"/>
+                    </video>
+                </div>
             )}
             </div>
             </div>

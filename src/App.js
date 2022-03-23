@@ -1,6 +1,5 @@
 import Home from './base/Home';
 import MyRoutes from './base/MyRoutes';
-import './App.css';
 
 function App() {
   return ( 
