@@ -1,0 +1,83 @@
+.theme-light {
+    --color-primary: #0060df;       /* light blue */ 
+    --color-accent: #fd6f53;        /* orange */
+    --background-color: #fbfbfe;    /* white */
+    --font-color: #000000;          /* black */
+}
+
+.theme-dark {
+    --color-primary: #17ed90;       /* light green */    
+    --color-accent: #12cdea;        /* sky blue */
+    --background-color: #243133;    /* black */
+    --font-color: #ffffff;          /* white */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: var(--background-color);
+    color: var(--color-primary);
+}
+
+.nav {
+    borderBottom: "solid 1px";
+    paddingBottom: "1rem";
+}
+
+.flex-container.fullPage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container.header {    
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-top: 2px;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.searchVideo {
+    width: 30vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    box-sizing: border-box;
+    color: var(--color-primary);
+    background: var(--background-color);
+}
+
+.videoItem {          
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    position: center;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.flex-container.footer {    
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.footerLeft {
+    float: left;
+}
+
+.footerRight {
+    float: right;
+}
+
+.switchTheme {
+    background: var(--background-color);
+    color: var(--font-color);    
+    float: right;
+}
