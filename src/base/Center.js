@@ -7,7 +7,7 @@ export default function Center() {
         <div className="overlay">
             <Typewriter
                 options={{
-                    strings: ['Hello', 'Mr pop', 'How do you do?'],
+                    strings: ['Hello', 'I am Shatrughan', 'Modder..', 'Ployglot...'],
                     autoStart: true,
                     loop: true,
                     delay: 100,
