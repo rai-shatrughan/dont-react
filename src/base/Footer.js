@@ -7,7 +7,7 @@ const item = "OpenSource by Shatrughan Rai .";
 export default function Footer() {
   return (
 
-        <div className="pure-g">
+        <div className="footer">
             <div className="pure-u-1-1 footer-menu">{item}</div>
         </div>
              

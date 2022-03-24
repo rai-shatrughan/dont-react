@@ -36,18 +36,26 @@ html, body {
     background: var(--font-color);
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 .centerBase {
-    margin-left: 30vw;
-    margin-top: 30px;
-    margin-bottom: 2px;
+    height: 90vh;
+    width: 95vw;
+}
+
+.overlay {
+    position:fixed;
+    top: 50%;
+    left: 50%;
 }
 
 .footer-menu {
-    position: absolute;
+    position: sticky;
     bottom: 0px;
     margin-bottom: 1px;
     text-align: right;
 }
-
 
 
