@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import StreamHome from "../stream/StreamHome";
+import VRHome from "../vr/VRHome";
 import Home from "../base/Home";
 
 export default class MyRoutes extends Component {
@@ -16,6 +17,7 @@ export default class MyRoutes extends Component {
                     <Route path="/" element={<Home />} />
                     <Route path="home" element={<Home />} />
                     <Route path="stream" element={<StreamHome />} />
+                    <Route path="vr" element={<VRHome />} />
                 </Routes>
             </BrowserRouter>
         )

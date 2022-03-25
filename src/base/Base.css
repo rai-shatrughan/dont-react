@@ -51,6 +51,11 @@ img:hover {
     left: 50%;
 }
 
+#canvasBox {
+    background: var(--background-color);
+    color: var(--font-color);
+}
+
 .footer-menu {
     position: sticky;
     bottom: 0px;

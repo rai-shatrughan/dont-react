@@ -5,7 +5,7 @@ import './Base.css';
 import logoDark from './assets/theme-dark.gif';
 import logoLight from './assets/theme-light.gif';
 
-const items = ["Stream", "ML", "Trends", "Metrics"];
+const items = ["Stream", "VR", "ML", "Trends", "Metrics"];
 
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);

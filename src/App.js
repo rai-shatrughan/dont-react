@@ -1,4 +1,3 @@
-import Home from './base/Home';
 import MyRoutes from './base/MyRoutes';
 
 function App() {
