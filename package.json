@@ -14,7 +14,8 @@
     "react-scripts": "5.0.0",
     "three": "^0.139.0",
     "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "x3dom": "^1.8.1"
   },
   "scripts": {
     "start": "PORT=3100 react-scripts start",

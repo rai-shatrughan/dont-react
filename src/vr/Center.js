@@ -10,21 +10,21 @@ import '../base/Base.css';
 export default function Center() {
   return (
         <div className="centerBase">
-        <div class="pure-g">
-            <div class="pure-u-1-3">
+        <div className="pure-g">
+            <div className="pure-u-1-3">
             <Canvas>
                 <pointLight position={[15, 15, 15]} />
                 <Sphere />
             </Canvas>
             </div>
 
-            <div class="pure-u-1-3">
+            <div className="pure-u-1-3">
             <Canvas>
                 <Dodecahedron />
             </Canvas>
             </div>
 
-            <div class="pure-u-1-3">
+            <div className="pure-u-1-3">
             <Canvas>
                 <ambientLight />
                 <pointLight position={[0, 0, 0]} />
@@ -33,8 +33,8 @@ export default function Center() {
             </div>
         </div>
 
-        <div class="pure-g">
-            <div class="pure-u-1-1">
+        <div className="pure-g">
+            <div className="pure-u-1-1">
                 <Canvas>
                 <ambientLight />
                 <pointLight position={[0, 0, 0]} />
@@ -44,8 +44,8 @@ export default function Center() {
             </div>
         </div>
 
-        <div class="pure-g">
-            <div class="pure-u-1-1">
+        <div className="pure-g">
+            <div className="pure-u-1-1">
                 <Canvas>
                 <ambientLight />
                 <Torus />
