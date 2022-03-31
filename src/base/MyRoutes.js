@@ -7,6 +7,7 @@ import {
 
 import StreamHome from "../stream/StreamHome";
 import VRHome from "../vr/VRHome";
+import TrendsHome from "../trends/TrendsHome";
 import Home from "../base/Home";
 
 export default class MyRoutes extends Component {
@@ -18,6 +19,7 @@ export default class MyRoutes extends Component {
                     <Route path="home" element={<Home />} />
                     <Route path="stream" element={<StreamHome />} />
                     <Route path="vr" element={<VRHome />} />
+                    <Route path="trends" element={<TrendsHome />} />
                 </Routes>
             </BrowserRouter>
         )
